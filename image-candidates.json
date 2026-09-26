@@ -1,0 +1,29 @@
+{
+  "candidates": [
+    {
+      "url": "https://images.unsplash.com/photo-1767681092416-bccf9410bda4?fm=jpg&q=60&w=3000&auto=format&fit=crop",
+      "alt": "Cars being repaired in a workshop"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1610092708835-af669294f3f3?fm=jpg&q=60&w=3000&auto=format&fit=crop",
+      "alt": "Brown car in a garage"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1702146713858-8e7d1cc29fe8?fm=jpg&q=60&w=3000&auto=format&fit=crop",
+      "alt": "Mechanic working on a car under a vehicle"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?fm=jpg&q=60&w=3000&auto=format&fit=crop",
+      "alt": "Mechanic in a grey uniform inspecting the engine of a car"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1615906655593-ad0386982a0f?fm=jpg&q=60&w=3000&auto=format&fit=crop",
+      "alt": "Mechanic working on car engine"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?fm=jpg&q=60&w=3000&auto=format&fit=crop",
+      "alt": "Hands with grease working on a car engine with a metal wrench"
+    }
+  ],
+  "source": "ai_search"
+}
