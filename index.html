@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>St John Auto Center | Honest Auto Repair on Wicker Ave, St John, IN</title>
+<meta name="description" content="St John Auto Center: neighborhood auto repair, maintenance, diagnostics, engine and transmission work, and pre-purchase inspections at 9571 Wicker Ave, St John, Indiana. Rated 4.8 stars from 47 reviews. Call (219) 365-8588.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Big+Shoulders+Stencil+Display:wght@800;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --asphalt:#141517;
+  --asphalt-2:#1d1f22;
+  --steel:#8a9097;
+  --steel-light:#c9cdd1;
+  --concrete:#e9e7e2;
+  --orange:#ff6a13;
+  --orange-deep:#d9530a;
+  --white:#f7f6f3;
+  --display:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;
+  --stencil:"Big Shoulders Stencil Display","Big Shoulders Display",Impact,sans-serif;
+  --body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --hazard:repeating-linear-gradient(-45deg,var(--orange) 0 18px,var(--asphalt) 18px 36px);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--body);font-size:1.0625rem;line-height:1.6;
+  color:var(--white);background:var(--asphalt);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+a{color:inherit}
+img,svg{display:block;max-width:100%}
+.wrap{width:min(1240px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:1rem;top:1rem;background:var(--orange);color:var(--asphalt);padding:.6rem 1rem;z-index:200;font-weight:700}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+
+/* ---------- top bar ---------- */
+.bar{
+  position:sticky;top:0;z-index:50;background:rgba(20,21,23,.92);
+  backdrop-filter:blur(8px);border-bottom:1px solid #2a2d31;
+}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.logo-mark{width:38px;height:38px;flex:none}
+.logo-text{font-family:var(--stencil);font-weight:900;font-size:1.35rem;letter-spacing:.04em;line-height:.9;text-transform:uppercase}
+.logo-text small{display:block;font-family:var(--body);font-weight:600;font-size:.62rem;letter-spacing:.22em;color:var(--steel)}
+.nav{display:none;gap:1.75rem;font-weight:600;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase}
+.nav a{text-decoration:none;color:var(--steel-light);transition:color .2s}
+.nav a:hover{color:var(--orange)}
+.call-pill{
+  display:inline-flex;align-items:center;gap:.5rem;background:var(--orange);color:var(--asphalt);
+  font-family:var(--display);font-weight:800;font-size:1.15rem;letter-spacing:.04em;
+  padding:.5rem 1rem;text-decoration:none;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);
+  transition:background .2s;
+}
+.call-pill:hover{background:var(--white)}
+.call-pill svg{width:18px;height:18px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:3.5rem 0 0;overflow:hidden;isolation:isolate}
+.hero::after{ /* floor line grid */
+  content:"";position:absolute;inset:0;z-index:-1;opacity:.35;
+  background:
+    linear-gradient(to right,#26292d 1px,transparent 1px) 0 0/80px 80px,
+    linear-gradient(to bottom,#26292d 1px,transparent 1px) 0 0/80px 80px;
+  mask-image:linear-gradient(to bottom,#000 10%,transparent 85%);
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.6rem;font-weight:700;font-size:.8rem;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--orange);
+}
+.eyebrow::before{content:"";width:28px;height:3px;background:var(--orange)}
+.hero-grid{display:grid;gap:2.5rem;position:relative;z-index:2}
+.hero h1{
+  font-family:var(--display);font-weight:900;text-transform:uppercase;
+  font-size:clamp(3.4rem,13vw,9.5rem);line-height:.84;letter-spacing:-.005em;margin-top:1rem;
+}
+.hero h1 .o{color:var(--orange)}
+.hero h1 .ghost{color:transparent;-webkit-text-stroke:2px var(--steel)}
+.hero-lede{max-width:34ch;font-size:1.2rem;color:var(--steel-light);margin-top:1.5rem}
+.hero-lede strong{color:var(--white)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;
+  font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.05em;
+  font-size:1.35rem;padding:1rem 1.6rem;transition:transform .2s,background .2s,color .2s;
+}
+.btn-primary{background:var(--orange);color:var(--asphalt);box-shadow:6px 6px 0 var(--white)}
+.btn-primary:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--white)}
+.btn-ghost{border:2px solid var(--steel);color:var(--white)}
+.btn-ghost:hover{border-color:var(--orange);color:var(--orange)}
+.btn svg{width:22px;height:22px}
+
+/* giant rating stat */
+.stat{
+  position:relative;align-self:end;border-left:6px solid var(--orange);padding:0 0 0 1.25rem;
+}
+.stat-num{
+  font-family:var(--stencil);font-weight:900;line-height:.78;
+  font-size:clamp(9rem,40vw,19rem);color:var(--white);letter-spacing:-.02em;display:block;
+}
+.stat-stars{display:flex;gap:.3rem;margin:.9rem 0 .5rem}
+.stat-stars svg{width:30px;height:30px}
+.stat-label{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.85rem;color:var(--steel-light)}
+.stat-label b{color:var(--orange);font-size:1.1rem}
+
+/* ---------- bay door diagonal banner ---------- */
+.bay{
+  position:relative;z-index:3;margin:4rem -6vw -3rem;transform:rotate(-4deg);
+  transform-origin:center;
+}
+.bay-rail{height:22px;background:var(--hazard);border-block:3px solid var(--asphalt)}
+.bay-door{
+  position:relative;background:
+    repeating-linear-gradient(to bottom,
+      #6f757c 0,#9aa0a6 6px,#b7bcc1 22px,#8b9197 44px,#50555b 48px,#2b2e32 50px);
+  padding:1.6rem 0;overflow:hidden;
+  box-shadow:0 30px 60px -20px rgba(0,0,0,.7);
+}
+.bay-door::before{ /* handle */
+  content:"";position:absolute;right:12%;bottom:18px;width:90px;height:16px;border-radius:3px;
+  background:linear-gradient(#2b2e32,#16181a);box-shadow:inset 0 2px 0 #555;
+}
+.marquee{display:flex;width:max-content;animation:roll 38s linear infinite}
+.marquee span{
+  font-family:var(--stencil);font-weight:900;text-transform:uppercase;white-space:nowrap;
+  font-size:clamp(2.2rem,6vw,4.4rem);color:var(--asphalt);letter-spacing:.04em;
+  padding-right:2.5rem;line-height:1;mix-blend-mode:multiply;
+}
+.marquee span i{font-style:normal;color:var(--orange-deep)}
+@keyframes roll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee{animation:none}}
+
+/* ---------- section scaffolding ---------- */
+section{position:relative}
+.sec-tag{
+  font-family:var(--stencil);font-weight:900;font-size:1rem;letter-spacing:.2em;color:var(--steel);
+  text-transform:uppercase;display:flex;align-items:center;gap:.8rem;
+}
+.sec-tag::after{content:"";flex:1;height:1px;background:#33373c}
+.h2{
+  font-family:var(--display);font-weight:900;text-transform:uppercase;
+  font-size:clamp(2.6rem,8vw,5.5rem);line-height:.88;margin-top:1rem;
+}
+.h2 em{font-style:normal;color:var(--orange)}
+
+/* ---------- services: work order board ---------- */
+.services{background:var(--concrete);color:var(--asphalt);padding:8rem 0 6rem}
+.services .sec-tag{color:#6b7076}
+.services .sec-tag::after{background:#c5c2bb}
+.svc-head{display:grid;gap:1.5rem;margin-bottom:3rem}
+.svc-head p{max-width:44ch;color:#43474c;font-size:1.1rem}
+.job-list{list-style:none;border-top:4px solid var(--asphalt)}
+.job{
+  display:grid;grid-template-columns:3.2rem 1fr;gap:.25rem 1rem;padding:1.6rem 0;
+  border-bottom:1px solid #c5c2bb;position:relative;transition:background .25s,padding .25s;
+}
+.job::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:0;background:var(--orange);transition:width .25s;
+}
+.job:hover{background:#f3f1ec;padding-left:1rem}
+.job:hover::before{width:6px}
+.job-no{font-family:var(--stencil);font-weight:900;font-size:1.6rem;color:var(--orange-deep);line-height:1}
+.job h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,4.5vw,2.6rem);line-height:.95}
+.job p{grid-column:2;color:#43474c;max-width:56ch}
+.job .chips{grid-column:2;display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
+.chip{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border:1.5px solid var(--asphalt);padding:.2rem .55rem}
+
+/* ---------- same hands ---------- */
+.hands{padding:7rem 0;background:var(--asphalt)}
+.hands-grid{display:grid;gap:3rem}
+.big-quote{
+  font-family:var(--display);font-weight:800;text-transform:uppercase;
+  font-size:clamp(2.2rem,6.5vw,4.6rem);line-height:.92;
+}
+.big-quote .o{color:var(--orange)}
+.hands-copy p{color:var(--steel-light);max-width:52ch;margin-bottom:1.1rem}
+.hands-copy p:first-child{font-size:1.25rem;color:var(--white)}
+.vs{margin-top:2rem;display:grid;grid-template-columns:1fr 1fr;border:2px solid #33373c}
+.vs div{padding:1.2rem}
+.vs div+div{border-left:2px solid #33373c;background:var(--asphalt-2)}
+.vs h4{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.3rem;letter-spacing:.04em;margin-bottom:.6rem}
+.vs div:first-child h4{color:var(--steel)}
+.vs div+div h4{color:var(--orange)}
+.vs ul{list-style:none;font-size:.95rem;color:var(--steel-light)}
+.vs li{padding:.3rem 0;border-top:1px dashed #33373c}
+.vs div:first-child li{text-decoration:line-through;text-decoration-color:#5b6066}
+
+/* ---------- process ---------- */
+.process{padding:0 0 7rem;background:var(--asphalt)}
+.steps{display:grid;gap:0;counter-reset:s;margin-top:3rem}
+.step{position:relative;padding:2rem 1.5rem 2rem 0;border-top:2px solid #33373c}
+.step::before{
+  counter-increment:s;content:"0" counter(s);font-family:var(--stencil);font-weight:900;
+  font-size:5rem;line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--steel);display:block;margin-bottom:.8rem;
+  transition:color .3s,-webkit-text-stroke-color .3s;
+}
+.step:hover::before{color:var(--orange);-webkit-text-stroke-color:var(--orange)}
+.step h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.8rem;line-height:1;margin-bottom:.5rem}
+.step p{color:var(--steel-light);max-width:34ch}
+
+/* ---------- pre-purchase callout ---------- */
+.ppi{
+  background:var(--orange);color:var(--asphalt);padding:5rem 0;overflow:hidden;position:relative;
+}
+.ppi::before{content:"";position:absolute;inset:0 0 auto;height:14px;background:var(--hazard);opacity:.9}
+.ppi-grid{display:grid;gap:2rem;align-items:center}
+.ppi h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2.6rem,8vw,5.2rem);line-height:.86}
+.ppi p{font-size:1.15rem;max-width:46ch;font-weight:600}
+.ppi .btn-primary{background:var(--asphalt);color:var(--white);box-shadow:6px 6px 0 var(--white)}
+.check{width:min(260px,60%);justify-self:start}
+
+/* ---------- visit ---------- */
+.visit{padding:7rem 0 5rem;background:var(--asphalt-2)}
+.visit-grid{display:grid;gap:3rem;margin-top:3rem}
+.phone-big{
+  display:block;text-decoration:none;font-family:var(--stencil);font-weight:900;
+  font-size:clamp(3rem,12vw,7.5rem);line-height:.9;letter-spacing:.01em;color:var(--white);
+  transition:color .2s;word-break:keep-all;
+}
+.phone-big:hover{color:var(--orange)}
+.phone-big span{color:var(--orange)}
+.visit-note{color:var(--steel-light);margin-top:1rem;max-width:40ch}
+.card{border:2px solid #33373c;padding:1.75rem;background:var(--asphalt)}
+.card h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.1rem;letter-spacing:.18em;color:var(--steel);margin-bottom:.6rem}
+.card address{font-style:normal;font-size:1.35rem;font-weight:600;line-height:1.35}
+.card + .card{margin-top:1rem}
+.card a.link{display:inline-flex;gap:.4rem;align-items:center;margin-top:1rem;color:var(--orange);font-weight:700;text-decoration:none;border-bottom:2px solid currentColor}
+.towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.4rem}
+.towns span{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.2rem;background:#26292d;padding:.25rem .7rem;letter-spacing:.03em}
+.towns span:first-child{background:var(--orange);color:var(--asphalt)}
+.route{margin-top:1rem}
+
+/* ---------- footer ---------- */
+footer{background:var(--asphalt);border-top:1px solid #2a2d31;padding:2.5rem 0 6.5rem;font-size:.9rem;color:var(--steel)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center}
+footer .credit{font-size:.8rem;opacity:.75}
+footer a{text-decoration:none}
+footer a:hover{color:var(--orange)}
+
+/* mobile sticky call */
+.mobile-call{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;justify-content:center;align-items:center;gap:.6rem;
+  background:var(--orange);color:var(--asphalt);text-decoration:none;
+  font-family:var(--display);font-weight:900;font-size:1.4rem;text-transform:uppercase;letter-spacing:.05em;padding:1rem;
+  border-top:3px solid var(--asphalt);
+}
+.mobile-call svg{width:22px;height:22px}
+
+/* ---------- scroll reveal (CSS only) ---------- */
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+    @keyframes rise{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+  }
+}
+
+/* ---------- larger screens ---------- */
+@media (min-width:760px){
+  .nav{display:flex}
+  .hero{padding-top:5rem}
+  .hero-grid{grid-template-columns:1.25fr .9fr;align-items:end}
+  .svc-head{grid-template-columns:1fr 1fr;align-items:end}
+  .job{grid-template-columns:5rem 1fr 1.2fr;align-items:baseline;padding:2rem 0}
+  .job-no{font-size:2rem}
+  .job p{grid-column:3;grid-row:1}
+  .job .chips{grid-column:3}
+  .hands-grid{grid-template-columns:1fr 1fr;align-items:start}
+  .steps{grid-template-columns:repeat(3,1fr);gap:2rem}
+  .ppi-grid{grid-template-columns:1.4fr 1fr}
+  .check{justify-self:end}
+  .visit-grid{grid-template-columns:1.3fr 1fr}
+  .mobile-call{display:none}
+  footer{padding-bottom:2.5rem}
+  .bay{margin-top:5rem}
+}
+@media (min-width:1100px){
+  .hero h1{font-size:9.8rem}
+  .stat{margin-bottom:1rem}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="St John Auto Center home">
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" fill="#ff6a13"/>
+        <path d="M6 30V14l14-7 14 7v16" fill="none" stroke="#141517" stroke-width="3"/>
+        <path d="M11 30V18h18v12M11 22h18M11 26h18" fill="none" stroke="#141517" stroke-width="2"/>
+      </svg>
+      <span class="logo-text">St John Auto<small>Center · Est. on Wicker Ave</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#shop">The Shop</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="call-pill" href="tel:+12193658588" aria-label="Call St John Auto Center at (219) 365-8588">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+      <span>219-365-8588</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Auto repair · St John, Indiana</span>
+        <h1 id="hero-title">Fixed <span class="ghost">right.</span><br>Told <span class="o">straight.</span></h1>
+        <p class="hero-lede">A neighborhood repair shop on Wicker Ave where <strong>the same people work on your car every visit</strong> — and give you a plain answer about what it needs.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+12193658588">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+            Call the shop
+          </a>
+          <a class="btn btn-ghost" href="#services">What we fix</a>
+        </div>
+      </div>
+
+      <div class="stat" aria-label="Rated 4.8 out of 5 stars from 47 Google reviews">
+        <span class="stat-num" aria-hidden="true">4.8</span>
+        <div class="stat-stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="#ff6a13" d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4L1.5 9.6 9 8.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path fill="#ff6a13" d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4L1.5 9.6 9 8.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path fill="#ff6a13" d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4L1.5 9.6 9 8.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path fill="#ff6a13" d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4L1.5 9.6 9 8.9z"/></svg>
+          <svg viewBox="0 0 24 24"><defs><linearGradient id="part"><stop offset="80%" stop-color="#ff6a13"/><stop offset="80%" stop-color="#3a3e43"/></linearGradient></defs><path fill="url(#part)" d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4L1.5 9.6 9 8.9z"/></svg>
+        </div>
+        <p class="stat-label">Out of 5 · from <b>47</b> local reviews</p>
+      </div>
+    </div>
+
+    <!-- Bay door diagonal banner -->
+    <div class="bay" aria-hidden="true">
+      <div class="bay-rail"></div>
+      <div class="bay-door">
+        <div class="marquee">
+          <span>Oil changes <i>/</i> Brakes <i>/</i> Tires <i>/</i> Diagnostics <i>/</i> Engine <i>/</i> Transmission <i>/</i> Pre-purchase inspections <i>/</i></span>
+          <span>Oil changes <i>/</i> Brakes <i>/</i> Tires <i>/</i> Diagnostics <i>/</i> Engine <i>/</i> Transmission <i>/</i> Pre-purchase inspections <i>/</i></span>
+        </div>
+      </div>
+      <div class="bay-rail"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services" aria-labelledby="svc-title">
+    <div class="wrap">
+      <p class="sec-tag">Work order</p>
+      <div class="svc-head reveal">
+        <h2 class="h2" id="svc-title">What comes<br>through <em>the bay.</em></h2>
+        <p>From a routine oil change to a transmission that's acting up, it all gets the same treatment: find the actual problem, explain it in plain English, fix it properly.</p>
+      </div>
+      <ol class="job-list">
+        <li class="job reveal">
+          <span class="job-no">01</span>
+          <h3>General auto repair</h3>
+          <p>The everyday stuff that keeps your car on the road — the noises, the leaks, the parts that finally gave out. Bring it in and we'll sort it out.</p>
+        </li>
+        <li class="job reveal">
+          <span class="job-no">02</span>
+          <h3>Routine maintenance</h3>
+          <p>Staying ahead of problems costs less than chasing them. Regular service keeps your daily commute boring — in the best way.</p>
+          <div class="chips"><span class="chip">Oil changes</span><span class="chip">Brakes</span><span class="chip">Tires</span></div>
+        </li>
+        <li class="job reveal">
+          <span class="job-no">03</span>
+          <h3>Diagnostics</h3>
+          <p>Check engine light on? Something just feels off? We track down the cause first, so you're not paying to swap parts on a guess.</p>
+        </li>
+        <li class="job reveal">
+          <span class="job-no">04</span>
+          <h3>Engine &amp; transmission</h3>
+          <p>The bigger jobs, handled by people who'll tell you honestly whether a repair makes sense for your vehicle.</p>
+        </li>
+        <li class="job reveal">
+          <span class="job-no">05</span>
+          <h3>Pre-purchase inspections</h3>
+          <p>Looking at a used car? Have it checked before you hand over the money. A second set of eyes now can save a lot of regret later.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SAME HANDS -->
+  <section class="hands" id="shop" aria-labelledby="shop-title">
+    <div class="wrap">
+      <p class="sec-tag">The shop</p>
+      <div class="hands-grid" style="margin-top:2.5rem">
+        <h2 class="big-quote reveal" id="shop-title">Same shop.<br>Same faces.<br><span class="o">Every visit.</span></h2>
+        <div class="hands-copy reveal">
+          <p>St John Auto Center is a small, local shop — and that's the whole point.</p>
+          <p>When you call, you talk to the people who'll actually work on your car. When you come back, they remember it. That kind of personal accountability is hard to find at a chain, and it's why drivers from St John, Dyer, Schererville and Cedar Lake keep coming back.</p>
+          <p>No flashy marketing. Just steady, honest work — and a 4.8-star reputation built one repair at a time.</p>
+          <div class="vs">
+            <div>
+              <h4>The chain</h4>
+              <ul><li>Whoever's on shift</li><li>Upsell checklist</li><li>Call center</li></ul>
+            </div>
+            <div>
+              <h4>Here</h4>
+              <ul><li>Same people each time</li><li>Plain answers</li><li>Call the shop directly</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" aria-labelledby="proc-title">
+    <div class="wrap">
+      <p class="sec-tag">How it goes</p>
+      <h2 class="h2 reveal" id="proc-title">Three steps.<br><em>No runaround.</em></h2>
+      <div class="steps">
+        <div class="step reveal">
+          <h3>Call the shop</h3>
+          <p>Tell us what the car's doing — or just ask a quick question. No forms, no hold music maze.</p>
+        </div>
+        <div class="step reveal">
+          <h3>Bring it in</h3>
+          <p>Drop it off at 9571 Wicker Ave. We'll take a proper look and figure out what's really going on.</p>
+        </div>
+        <div class="step reveal">
+          <h3>Get it back right</h3>
+          <p>A straight explanation of what was done and why, from the same people you'll see next time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRE-PURCHASE -->
+  <section class="ppi" aria-labelledby="ppi-title">
+    <div class="wrap ppi-grid">
+      <div class="reveal">
+        <h2 id="ppi-title">Buying used?<br>Check it first.</h2>
+        <p style="margin:1.25rem 0 2rem">Before you sign for that "great deal" on a used car, let a local mechanic give it a once-over. It's the cheapest insurance you'll ever buy.</p>
+        <a class="btn btn-primary" href="tel:+12193658588">Book an inspection</a>
+      </div>
+      <svg class="check reveal" viewBox="0 0 200 240" aria-hidden="true">
+        <rect x="20" y="20" width="160" height="210" fill="#141517"/>
+        <rect x="70" y="8" width="60" height="26" fill="#f7f6f3"/>
+        <g fill="none" stroke="#ff6a13" stroke-width="7" stroke-linecap="square">
+          <path d="M42 70l10 10 18-20"/><path d="M42 115l10 10 18-20"/><path d="M42 160l10 10 18-20"/>
+        </g>
+        <g fill="#8a9097"><rect x="86" y="68" width="74" height="8"/><rect x="86" y="113" width="60" height="8"/><rect x="86" y="158" width="68" height="8"/></g>
+        <rect x="42" y="198" width="118" height="6" fill="#33373c"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <p class="sec-tag">Find us</p>
+      <h2 class="h2 reveal" id="visit-title">Pick up <em>the phone.</em></h2>
+      <div class="visit-grid">
+        <div class="reveal">
+          <a class="phone-big" href="tel:+12193658588">(219)<br>365<span>-</span>8588</a>
+          <p class="visit-note">The fastest way to schedule a repair or ask a quick question. Call for current shop hours and availability.</p>
+        </div>
+        <div class="reveal">
+          <div class="card">
+            <h3>The shop</h3>
+            <address>St John Auto Center<br>9571 Wicker Ave<br>St John, IN 46373</address>
+            <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=St+John+Auto+Center+9571+Wicker+Ave+St+John+IN+46373" target="_blank" rel="noopener">Get directions →</a>
+          </div>
+          <div class="card">
+            <h3>Serving</h3>
+            <div class="towns"><span>St John</span><span>Dyer</span><span>Schererville</span><span>Cedar Lake</span></div>
+            <svg class="route" viewBox="0 0 300 40" aria-hidden="true">
+              <path d="M4 20H296" stroke="#33373c" stroke-width="6"/>
+              <path d="M4 20H296" stroke="#ff6a13" stroke-width="2" stroke-dasharray="12 10"/>
+              <circle cx="40" cy="20" r="8" fill="#ff6a13"/>
+            </svg>
+            <p style="color:var(--steel);font-size:.9rem">Right on Wicker Ave (US-41) — easy to reach from across Northwest Indiana.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 St John Auto Center · 9571 Wicker Ave, St John, IN 46373 · <a href="tel:+12193658588">(219) 365-8588</a></p>
+    <p class="credit">Website sample by Wild Card Creative Co</p>
+  </div>
+</footer>
+
+<a class="mobile-call" href="tel:+12193658588">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+  Call (219) 365-8588
+</a>
+</body>
+</html>
